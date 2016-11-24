@@ -326,7 +326,12 @@ Distribution</a></li>
         See all <a href="classes.html">API classes</a>.
         Remember to switch the selected <em>Revision</em> number in accordance
         with your device firmware and installed Android
-        <em>Datalogic Selfshopping Extension</em> update.</p>
+        <em>Datalogic Selfshopping Extension</em> update.
+        <p>In order to use these API <strong>do not forget</strong> to add the following "uses-library" tag to your application manifest.</p>
+		<pre class="prettyprint">
+&lt;uses-library
+        android:name="com.datalogic.extension.selfshopping"
+        android:required="true" /&gt;</pre></p>
 </div>
 
 
