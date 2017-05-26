@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic Selfshopping Extension</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1' ];
+        var SINCE_DATA = [ '1', '2' ];
         buildApiLevelSelector();
       </script>
                   
@@ -262,6 +262,14 @@ Distribution</a></li>
   <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/package-summary.html">com.datalogic.extension.selfshopping.cradle</a></li>
     <li class="selected api apilevel-1">
   <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/package-summary.html">com.datalogic.extension.selfshopping.cradle.joyatouch</a></li>
+    <li class="api apilevel-2">
+  <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/package-summary.html">com.datalogic.extension.selfshopping.led</a></li>
+    <li class="api apilevel-2">
+  <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/package-summary.html">com.datalogic.extension.selfshopping.led.action</a></li>
+    <li class="api apilevel-2">
+  <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/persistence/package-summary.html">com.datalogic.extension.selfshopping.led.action.persistence</a></li>
+    <li class="api apilevel-2">
+  <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/event/package-summary.html">com.datalogic.extension.selfshopping.led.event</a></li>
               </ul><br/>
 
             </div> <!-- end packages-nav -->
@@ -447,7 +455,9 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">Info about the state of the Joya Touch Cradle.
+<p itemprop="articleBody">Info about the state of the Joya Touch Cradle. Some info are general
+ to the Cradle, while other are specific to the Cradle slot in use
+ by the device.
 </p>
 
 
@@ -583,7 +593,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/StateInfo.html#getInsertionCount()">getInsertionCount</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Gets the current insertion count.</div>
+        <div class="jd-descrdiv">Gets the current insertion count for this Cradle slot.</div>
   
   </td></tr>
 
@@ -619,7 +629,7 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/StateInfo.html#isFastChargeAvailable()">isFastChargeAvailable</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Checks if fast charge is available in this Cradle slot.</div>
+        <div class="jd-descrdiv">Checks if fast charge is available in this Cradle.</div>
   
   </td></tr>
 
@@ -1014,7 +1024,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Gets the current insertion count.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the current insertion count for this Cradle slot.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li><code>long</code> the Cradle insertion count.
@@ -1084,7 +1094,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Checks if fast charge is available in this Cradle slot.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Checks if fast charge is available in this Cradle.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li><code>boolean</code> true if fast charge is available,

@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.ico" />
-<title>Cradle - Datalogic Selfshopping Extension version 1 | Android Add-on</title>
+<title>Led - Datalogic Selfshopping Extension version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="1" style="display:none"></div>
+  <div id="doc-api-level" class="2" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -258,11 +258,11 @@ Distribution</a></li>
               	
     <li class="api apilevel-1">
   <a href="../../../../../../reference/com/datalogic/extension/selfshopping/package-summary.html">com.datalogic.extension.selfshopping</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/package-summary.html">com.datalogic.extension.selfshopping.cradle</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/package-summary.html">com.datalogic.extension.selfshopping.cradle.joyatouch</a></li>
-    <li class="api apilevel-2">
+    <li class="selected api apilevel-2">
   <a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/package-summary.html">com.datalogic.extension.selfshopping.led</a></li>
     <li class="api apilevel-2">
   <a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/action/package-summary.html">com.datalogic.extension.selfshopping.led.action</a></li>
@@ -282,22 +282,19 @@ Distribution</a></li>
               
     <li><h2>Interfaces</h2>
       <ul>
-          <li class="selected api apilevel-1"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.html">Cradle</a></li>
-          <li class="api apilevel-2"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleInsertionListener.html">CradleInsertionListener</a></li>
+          <li class="api apilevel-2"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingLed.html">DimmingLed</a></li>
+          <li class="selected api apilevel-2"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/Led.html">Led</a></li>
       </ul>
     </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleManager.html">CradleManager</a></li>
+          <li class="api apilevel-2"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html">DimmingSequence</a></li>
+          <li class="api apilevel-2"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint</a></li>
+          <li class="api apilevel-2"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/SelfshoppingLedManager.html">SelfshoppingLedManager</a></li>
       </ul>
     </li>
               
-    <li><h2>Enums</h2>
-      <ul>
-          <li class="api apilevel-1"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleType.html">CradleType</a></li>
-      </ul>
-    </li>
               
               
             </ul><br/>
@@ -375,7 +372,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a>
   
   
 
@@ -391,7 +388,7 @@ Summary:
      
     
     interface
-<h1 itemprop="name">Cradle</h1>
+<h1 itemprop="name">Led</h1>
 
 
 
@@ -404,13 +401,13 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-2">
 <table class="jd-inheritance-table">
 
 
     <tr>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.extension.selfshopping.cradle.Cradle</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.extension.selfshopping.led.Led</td>
     </tr>
     
 
@@ -435,7 +432,7 @@ Summary:
               >
           
             
-              <a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.html">CradleJoyaTouch</a>
+              <a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingLed.html">DimmingLed</a>
             
           
       </div>
@@ -443,9 +440,9 @@ Summary:
               style="display: none;"
               >
   <table class="jd-sumtable-expando">
-        <tr class="alt-color api apilevel-1" >
-              <td class="jd-linkcol"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.html">CradleJoyaTouch</a></td>
-              <td class="jd-descrcol" width="100%">Interface for the Joya Touch Cradle.&nbsp;</td>
+        <tr class="alt-color api apilevel-2" >
+              <td class="jd-linkcol"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingLed.html">DimmingLed</a></td>
+              <td class="jd-descrcol" width="100%">Interface exposing the API of a dimming LED.&nbsp;</td>
           </tr>
   </table>
       </div>
@@ -457,7 +454,7 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">Interface exposing the API of a generic Cradle.
+<p itemprop="articleBody">Interface exposing the API of a generic LED.
 </p>
 
 
@@ -525,49 +522,12 @@ Summary:
             
             
             
-            boolean</nobr>
+            void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.html#addCradleInsertionListener(com.datalogic.extension.selfshopping.cradle.CradleInsertionListener)">addCradleInsertionListener</a></span>(<a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleInsertionListener.html">CradleInsertionListener</a> listener)</nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/Led.html#blink(int, int, int)">blink</a></span>(int numCycles, int delayOn, int delayOff)</nobr>
         
-        <div class="jd-descrdiv">Add a listener that is used in order to manage the insertion and
- extraction events from the Cradle.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-1" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            <a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleType.html">CradleType</a></nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.html#getType()">getType</a></span>()</nobr>
-        
-        <div class="jd-descrdiv">Returns the specific type of this Cradle.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-typecol"><nobr>
-            abstract
-            
-            
-            
-            
-            boolean</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.html#isDeviceInCradle()">isDeviceInCradle</a></span>()</nobr>
-        
-        <div class="jd-descrdiv">Checks if the device is inserted in the Cradle.</div>
+        <div class="jd-descrdiv">Blink the LED.</div>
   
   </td></tr>
 
@@ -580,12 +540,48 @@ Summary:
             
             
             
-            boolean</nobr>
+            int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.html#removeCradleInsertionListener(com.datalogic.extension.selfshopping.cradle.CradleInsertionListener)">removeCradleInsertionListener</a></span>(<a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleInsertionListener.html">CradleInsertionListener</a> listener)</nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/Led.html#getId()">getId</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Remove a listener previously inserted by the specific add method.</div>
+        <div class="jd-descrdiv">Gets the ID of this LED.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-2" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/Led.html#turnOff()">turnOff</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Turn the LED off.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-2" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/Led.html#turnOn()">turnOn</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Turn the LED on.</div>
   
   </td></tr>
 
@@ -638,7 +634,7 @@ Summary:
 
 
 
-<A NAME="addCradleInsertionListener(com.datalogic.extension.selfshopping.cradle.CradleInsertionListener)"></A>
+<A NAME="blink(int, int, int)"></A>
 
 <div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
@@ -648,10 +644,10 @@ Summary:
          
         abstract 
          
-        boolean
+        void
       </span>
-      <span class="sympad">addCradleInsertionListener</span>
-      <span class="normal">(<a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleInsertionListener.html">CradleInsertionListener</a> listener)</span>
+      <span class="sympad">blink</span>
+      <span class="normal">(int numCycles, int delayOn, int delayOff)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -662,99 +658,33 @@ Summary:
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Add a listener that is used in order to manage the insertion and
- extraction events from the Cradle.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Blink the LED.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
-          <th>listener</td>
-          <td>The <code><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleInsertionListener.html">CradleInsertionListener</a></code> to add.</td>
+          <th>numCycles</td>
+          <td>The number of blinking cycles (-1 = infinite).</td>
+        </tr>
+        <tr>
+          <th>delayOn</td>
+          <td>The number of milliseconds the LED is turned ON during a
+        blinking cycle.</td>
+        </tr>
+        <tr>
+          <th>delayOff</td>
+          <td>The number of milliseconds the LED is turned OFF during a
+        blinking cycle.
+</td>
         </tr>
       </table>
   </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code>boolean</code> true in case of success, false otherwise.
-</li></ul>
-  </div>
 
     </div>
 </div>
 
 
-<A NAME="getType()"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        abstract 
-         
-        <a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleType.html">CradleType</a>
-      </span>
-      <span class="sympad">getType</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the specific type of this Cradle.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>A <code><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleType.html">CradleType</a></code> specifying the current Cradle type.
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="isDeviceInCradle()"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-        abstract 
-         
-        boolean
-      </span>
-      <span class="sympad">isDeviceInCradle</span>
-      <span class="normal">()</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Checks if the device is inserted in the Cradle.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code>boolean</code> true if the device is inside the Cradle,
- false otherwise or in case of failure in the detection.
-</li></ul>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="removeCradleInsertionListener(com.datalogic.extension.selfshopping.cradle.CradleInsertionListener)"></A>
+<A NAME="getId()"></A>
 
 <div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
@@ -764,10 +694,10 @@ Summary:
          
         abstract 
          
-        boolean
+        int
       </span>
-      <span class="sympad">removeCradleInsertionListener</span>
-      <span class="normal">(<a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleInsertionListener.html">CradleInsertionListener</a> listener)</span>
+      <span class="sympad">getId</span>
+      <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
@@ -778,21 +708,75 @@ Summary:
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Remove a listener previously inserted by the specific add method.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>listener</td>
-          <td>The <code><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleInsertionListener.html">CradleInsertionListener</a></code> to remove.</td>
-        </tr>
-      </table>
-  </div>
+  <div class="jd-tagdata jd-tagdescr"><p>Gets the ID of this LED.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li><code>boolean</code> true in case of success, false otherwise.
+      <ul class="nolist"><li><code>int</code>
+         The LED ID.
 </li></ul>
   </div>
+
+    </div>
+</div>
+
+
+<A NAME="turnOff()"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">turnOff</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Turn the LED off.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="turnOn()"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        void
+      </span>
+      <span class="sympad">turnOn</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Turn the LED on.
+</p></div>
 
     </div>
 </div>

@@ -244,7 +244,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic Selfshopping Extension</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1' ];
+        var SINCE_DATA = [ '1', '2' ];
         buildApiLevelSelector();
       </script>
                   
@@ -261,6 +261,14 @@ Distribution</a></li>
   <a href="../reference/com/datalogic/extension/selfshopping/cradle/package-summary.html">com.datalogic.extension.selfshopping.cradle</a></li>
     <li class="api apilevel-1">
   <a href="../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/package-summary.html">com.datalogic.extension.selfshopping.cradle.joyatouch</a></li>
+    <li class="api apilevel-2">
+  <a href="../reference/com/datalogic/extension/selfshopping/led/package-summary.html">com.datalogic.extension.selfshopping.led</a></li>
+    <li class="api apilevel-2">
+  <a href="../reference/com/datalogic/extension/selfshopping/led/action/package-summary.html">com.datalogic.extension.selfshopping.led.action</a></li>
+    <li class="api apilevel-2">
+  <a href="../reference/com/datalogic/extension/selfshopping/led/action/persistence/package-summary.html">com.datalogic.extension.selfshopping.led.action.persistence</a></li>
+    <li class="api apilevel-2">
+  <a href="../reference/com/datalogic/extension/selfshopping/led/event/package-summary.html">com.datalogic.extension.selfshopping.led.event</a></li>
               </ul><br/>
 
             </div> <!-- end packages-nav -->
@@ -323,8 +331,10 @@ Distribution</a></li>
 <p>These are the Android API classes. See all <a href="packages.html">API packages</a>.</p>
 <div class="jd-letterlist">
     <a href="#letter_C">C</a>&nbsp;&nbsp;
+    <a href="#letter_D">D</a>&nbsp;&nbsp;
     <a href="#letter_G">G</a>&nbsp;&nbsp;
     <a href="#letter_L">L</a>&nbsp;&nbsp;
+    <a href="#letter_P">P</a>&nbsp;&nbsp;
     <a href="#letter_S">S</a>&nbsp;&nbsp;
     <a href="#letter_V">V</a>&nbsp;&nbsp;
 </div>
@@ -344,33 +354,66 @@ Distribution</a></li>
     
         <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/Cradle.html">Cradle</a></td>
-            <td class="jd-descrcol" width="100%">Interface exposing API for of a generic Cradle.&nbsp;</td>
+            <td class="jd-descrcol" width="100%">Interface exposing the API of a generic Cradle.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-2" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/CradleInsertionListener.html">CradleInsertionListener</a></td>
+            <td class="jd-descrcol" width="100%">This interface is used by the application to listen to the events of insertion
+ and extraction of the device from the Cradle..&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.html">CradleJoyaTouch</a></td>
             <td class="jd-descrcol" width="100%">Interface for the Joya Touch Cradle.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/CradleManager.html">CradleManager</a></td>
             <td class="jd-descrcol" width="100%">This class is used to return the current Cradle API, depending on the
  targeted device.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/CradleType.html">CradleType</a></td>
             <td class="jd-descrcol" width="100%">This enum lists the currently supported Cradles.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CustomArea.html">CustomArea</a></td>
             <td class="jd-descrcol" width="100%">Class representing the Joya Touch custom area of data, consisting in an
  array of bytes and its size.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_D">D</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-2" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/led/DimmingLed.html">DimmingLed</a></td>
+            <td class="jd-descrcol" width="100%">Interface exposing the API of a dimming LED.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-2" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html">DimmingSequence</a></td>
+            <td class="jd-descrcol" width="100%">Class representing a sequence characterized by <code>(time, brightness)</code> pairs.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-2" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint</a></td>
+            <td class="jd-descrcol" width="100%">A point in the dimming sequence, characterized by a time value (in
+ milliseconds) and a brightness value (in percentage).&nbsp;</td>
         </tr>
     
     
@@ -395,9 +438,58 @@ Distribution</a></li>
 <table class="jd-sumtable">
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-2" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/led/Led.html">Led</a></td>
+            <td class="jd-descrcol" width="100%">Interface exposing the API of a generic LED.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/LedAction.html">LedAction</a></td>
             <td class="jd-descrcol" width="100%">This enum lists the LED actions available.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-2" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/led/action/LedAction.html">LedAction</a></td>
+            <td class="jd-descrcol" width="100%">Abstract class used to represent an action to be executed by the
+ <code><a href="../reference/com/datalogic/extension/selfshopping/led/SelfshoppingLedManager.html">SelfshoppingLedManager</a></code>.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-2" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/led/action/LedActionBlink.html">LedActionBlink</a></td>
+            <td class="jd-descrcol" width="100%">LED action for the blinking of a LED.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-2" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/led/action/LedActionDim.html">LedActionDim</a></td>
+            <td class="jd-descrcol" width="100%">LED action for the dimming of a LED.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-2" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/led/action/LedActionSetBrightness.html">LedActionSetBrightness</a></td>
+            <td class="jd-descrcol" width="100%">LED action for setting the brightness of a LED.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-2" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/led/action/LedActionTurnOff.html">LedActionTurnOff</a></td>
+            <td class="jd-descrcol" width="100%">LED action for turning OFF a LED.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-2" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/led/action/LedActionTurnOn.html">LedActionTurnOn</a></td>
+            <td class="jd-descrcol" width="100%">LED action for turning ON a LED.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class="alt-color api apilevel-2" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/led/event/LedEvent.html">LedEvent</a></td>
+            <td class="jd-descrcol" width="100%">Interface exposing the API of a generic LED event.&nbsp;</td>
         </tr>
     
     
@@ -410,11 +502,31 @@ Distribution</a></li>
 </table>
 
 
+<h2 id="letter_P">P</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-2" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/led/action/persistence/PersistJSON.html">PersistJSON</a></td>
+            <td class="jd-descrcol" width="100%">Helper class to allow persisting <code><a href="../reference/com/datalogic/extension/selfshopping/led/action/LedAction.html">LedAction</a></code>
+ objects to the JSON format.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
 <h2 id="letter_S">S</h2>
 <table class="jd-sumtable">
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-2" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/led/SelfshoppingLedManager.html">SelfshoppingLedManager</a></td>
+            <td class="jd-descrcol" width="100%">The LED Manager used in the Selfshopping Extension SDK.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/StateInfo.html">StateInfo</a></td>
             <td class="jd-descrcol" width="100%">Info about the state of the Joya Touch Cradle.&nbsp;</td>
         </tr>

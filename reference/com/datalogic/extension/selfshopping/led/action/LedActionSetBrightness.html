@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../../../favicon.ico" />
-<title>CustomArea - Datalogic Selfshopping Extension version 1 | Android Add-on</title>
+<title>LedActionSetBrightness - Datalogic Selfshopping Extension version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="1" style="display:none"></div>
+  <div id="doc-api-level" class="2" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -260,11 +260,11 @@ Distribution</a></li>
   <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/package-summary.html">com.datalogic.extension.selfshopping</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/package-summary.html">com.datalogic.extension.selfshopping.cradle</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/package-summary.html">com.datalogic.extension.selfshopping.cradle.joyatouch</a></li>
     <li class="api apilevel-2">
   <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/package-summary.html">com.datalogic.extension.selfshopping.led</a></li>
-    <li class="api apilevel-2">
+    <li class="selected api apilevel-2">
   <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/package-summary.html">com.datalogic.extension.selfshopping.led.action</a></li>
     <li class="api apilevel-2">
   <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/persistence/package-summary.html">com.datalogic.extension.selfshopping.led.action.persistence</a></li>
@@ -280,27 +280,18 @@ Distribution</a></li>
 
             <ul>
               
-    <li><h2>Interfaces</h2>
-      <ul>
-          <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.html">CradleJoyaTouch</a></li>
-      </ul>
-    </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/ConfigArea.html">ConfigArea</a></li>
-          <li class="selected api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CustomArea.html">CustomArea</a></li>
-          <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/GenericArea.html">GenericArea</a></li>
-          <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/StateInfo.html">StateInfo</a></li>
+          <li class="api apilevel-2"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedAction.html">LedAction</a></li>
+          <li class="api apilevel-2"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionBlink.html">LedActionBlink</a></li>
+          <li class="api apilevel-2"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionDim.html">LedActionDim</a></li>
+          <li class="selected api apilevel-2"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionSetBrightness.html">LedActionSetBrightness</a></li>
+          <li class="api apilevel-2"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionTurnOff.html">LedActionTurnOff</a></li>
+          <li class="api apilevel-2"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionTurnOn.html">LedActionTurnOn</a></li>
       </ul>
     </li>
               
-    <li><h2>Enums</h2>
-      <ul>
-          <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/LedAction.html">LedAction</a></li>
-          <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/LockAction.html">LockAction</a></li>
-      </ul>
-    </li>
               
               
             </ul><br/>
@@ -388,6 +379,9 @@ Summary:
 
 
 
+  &#124; <a href="#pubmethods">Methods</a>
+  
+
 
 
   &#124; <a href="#inhmethods">Inherited Methods</a>
@@ -397,7 +391,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a>
   
   
 
@@ -413,7 +407,7 @@ Summary:
      
     
     class
-<h1 itemprop="name">CustomArea</h1>
+<h1 itemprop="name">LedActionSetBrightness</h1>
 
 
 
@@ -422,7 +416,7 @@ Summary:
   
 
   
-    extends <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/GenericArea.html">GenericArea</a><br/>
+    extends <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedAction.html">LedAction</a><br/>
   
   
   
@@ -436,7 +430,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-2">
 <table class="jd-inheritance-table">
 
 
@@ -450,7 +444,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="2" class="jd-inheritance-class-cell"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/GenericArea.html">com.datalogic.extension.selfshopping.cradle.joyatouch.GenericArea</a></td>
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedAction.html">com.datalogic.extension.selfshopping.led.action.LedAction</a></td>
     </tr>
     
 
@@ -460,7 +454,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.extension.selfshopping.cradle.joyatouch.CustomArea</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.extension.selfshopping.led.action.LedActionSetBrightness</td>
     </tr>
     
 
@@ -476,8 +470,7 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">Class representing the Joya Touch custom area of data, consisting in an
- array of bytes and its size. Each Cradle slot contains one of these areas.
+<p itemprop="articleBody">LED action for setting the brightness of a LED.
 </p>
 
 
@@ -523,10 +516,10 @@ Summary:
 
 
     
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-typecol">int</td>
-        <td class="jd-linkcol"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CustomArea.html#SIZE">SIZE</a></td>
-        <td class="jd-descrcol" width="100%">Custom area size for the Joya Touch Cradle.</td>
+    <tr class="alt-color api apilevel-2" >
+        <td class="jd-typecol">String</td>
+        <td class="jd-linkcol"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionSetBrightness.html#TYPE">TYPE</a></td>
+        <td class="jd-descrcol" width="100%">Set brightness action type.</td>
     </tr>
     
     
@@ -550,7 +543,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
@@ -560,45 +553,9 @@ Summary:
             </nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CustomArea.html#CustomArea()">CustomArea</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionSetBrightness.html#LedActionSetBrightness(int, int)">LedActionSetBrightness</a></span>(int id, int brightness)</nobr>
         
-        <div class="jd-descrdiv">Constructor for an area of <code><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CustomArea.html#SIZE">SIZE</a></code> elements.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-1" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            </nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CustomArea.html#CustomArea(int)">CustomArea</a></span>(int size)</nobr>
-        
-        <div class="jd-descrdiv">Constructor specifying the size of the internal byte array to create.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            </nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CustomArea.html#CustomArea(byte[])">CustomArea</a></span>(byte[] content)</nobr>
-        
-        <div class="jd-descrdiv">Constructor that fills the area with the byte array given as input.</div>
+        <div class="jd-descrdiv">Default constructor for the set brightness action.</div>
   
   </td></tr>
 
@@ -609,6 +566,33 @@ Summary:
 
 
 
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-2" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionSetBrightness.html#getBrightness()">getBrightness</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the brightness value.</div>
+  
+  </td></tr>
+
+
+
+</table>
 
 
 
@@ -624,43 +608,25 @@ Summary:
 
 <tr class="api apilevel-" >
 <td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.datalogic.extension.selfshopping.cradle.joyatouch.GenericArea" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-com.datalogic.extension.selfshopping.cradle.joyatouch.GenericArea-trigger"
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.datalogic.extension.selfshopping.led.action.LedAction" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-com.datalogic.extension.selfshopping.led.action.LedAction-trigger"
           src="../../../../../../../assets/images/triangle-closed.png"
           class="jd-expando-trigger-img" /></a>
 From class
 
-  <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/GenericArea.html">com.datalogic.extension.selfshopping.cradle.joyatouch.GenericArea</a>
+  <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedAction.html">com.datalogic.extension.selfshopping.led.action.LedAction</a>
 
-<div id="inherited-methods-com.datalogic.extension.selfshopping.cradle.joyatouch.GenericArea">
-  <div id="inherited-methods-com.datalogic.extension.selfshopping.cradle.joyatouch.GenericArea-list"
+<div id="inherited-methods-com.datalogic.extension.selfshopping.led.action.LedAction">
+  <div id="inherited-methods-com.datalogic.extension.selfshopping.led.action.LedAction-list"
         class="jd-inheritedlinks">
   </div>
-  <div id="inherited-methods-com.datalogic.extension.selfshopping.cradle.joyatouch.GenericArea-summary" style="display: none;">
+  <div id="inherited-methods-com.datalogic.extension.selfshopping.led.action.LedAction-summary" style="display: none;">
     <table class="jd-sumtable-expando">
     
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
-        <td class="jd-typecol"><nobr>
-            
-            
-            
-            
-            
-            byte[]</nobr>
-        </td>
-        <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/GenericArea.html#getContent()">getContent</a></span>()</nobr>
-        
-        <div class="jd-descrdiv">Gets the content of this area.</div>
-  
-  </td></tr>
-
-
-	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
@@ -670,27 +636,27 @@ From class
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/GenericArea.html#getSize()">getSize</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedAction.html#getId()">getId</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Gets the area size.</div>
+        <div class="jd-descrdiv">Returns the LED ID associated with this action.</div>
   
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
             
             
             
-            void</nobr>
+            String</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/GenericArea.html#setContent(byte[])">setContent</a></span>(byte[] content)</nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedAction.html#getType()">getType</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Sets the content of this area.</div>
+        <div class="jd-descrdiv">Returns the action type.</div>
   
   </td></tr>
 
@@ -932,29 +898,28 @@ From class
 
 
 
-<A NAME="SIZE"></A>
+<A NAME="TYPE"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
         static 
         final 
-        int
+        String
       </span>
-        SIZE
+        TYPE
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Custom area size for the Joya Touch Cradle. It is not
- possible to write or read more than this amount of bytes.
+  <div class="jd-tagdata jd-tagdescr"><p>Set brightness action type.
 </p></div>
 
     
@@ -962,8 +927,7 @@ From class
         <span class="jd-tagtitle">Constant Value: </span>
         <span>
             
-                512
-                (0x00000200)
+                "setBrightness"
             
         </span>
         </div>
@@ -985,9 +949,9 @@ From class
 
 
 
-<A NAME="CustomArea()"></A>
+<A NAME="LedActionSetBrightness(int, int)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -997,117 +961,29 @@ From class
          
         
       </span>
-      <span class="sympad">CustomArea</span>
-      <span class="normal">()</span>
+      <span class="sympad">LedActionSetBrightness</span>
+      <span class="normal">(int id, int brightness)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Constructor for an area of <code><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CustomArea.html#SIZE">SIZE</a></code> elements.
-</p></div>
-
-    </div>
-</div>
-
-
-<A NAME="CustomArea(int)"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        
-      </span>
-      <span class="sympad">CustomArea</span>
-      <span class="normal">(int size)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Constructor specifying the size of the internal byte array to create.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Default constructor for the set brightness action.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
-          <th>size</td>
-          <td>The requested byte array size.</td>
+          <th>id</td>
+          <td>The LED ID.</td>
         </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
         <tr>
-            <th>IllegalArgumentException</td>
-            <td>in case the input size is invalid.
-</td>
-        </tr>
-      </table>
-  </div>
-
-    </div>
-</div>
-
-
-<A NAME="CustomArea(byte[])"></A>
-
-<div class="jd-details api apilevel-1"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        
-      </span>
-      <span class="sympad">CustomArea</span>
-      <span class="normal">(byte[] content)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Constructor that fills the area with the byte array given as input.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>content</td>
-          <td>The byte array that will represent the content of the
-            new area. This array will be deep copied inside the class,
-            any modification to the original array will not be
-            reproduced inside the CustomArea object.</td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Throws</h5>
-      <table class="jd-tagtable">  
-        <tr>
-            <th>IllegalArgumentException</td>
-            <td>in case the input array is invalid.
+          <th>brightness</td>
+          <td>The LED brightness to set (in percentage).
 </td>
         </tr>
       </table>
@@ -1127,6 +1003,47 @@ From class
 
 <!-- ========= METHOD DETAIL ======== -->
 <!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="getBrightness()"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getBrightness</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the brightness value.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code>
+         The brightness value (in percentage).
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
 
 
 

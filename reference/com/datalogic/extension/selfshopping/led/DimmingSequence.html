@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../../favicon.ico" />
-<title>CradleManager - Datalogic Selfshopping Extension version 1 | Android Add-on</title>
+<title>DimmingSequence - Datalogic Selfshopping Extension version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="1" style="display:none"></div>
+  <div id="doc-api-level" class="2" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -258,11 +258,11 @@ Distribution</a></li>
               	
     <li class="api apilevel-1">
   <a href="../../../../../../reference/com/datalogic/extension/selfshopping/package-summary.html">com.datalogic.extension.selfshopping</a></li>
-    <li class="selected api apilevel-1">
+    <li class="api apilevel-1">
   <a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/package-summary.html">com.datalogic.extension.selfshopping.cradle</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/package-summary.html">com.datalogic.extension.selfshopping.cradle.joyatouch</a></li>
-    <li class="api apilevel-2">
+    <li class="selected api apilevel-2">
   <a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/package-summary.html">com.datalogic.extension.selfshopping.led</a></li>
     <li class="api apilevel-2">
   <a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/action/package-summary.html">com.datalogic.extension.selfshopping.led.action</a></li>
@@ -282,22 +282,19 @@ Distribution</a></li>
               
     <li><h2>Interfaces</h2>
       <ul>
-          <li class="api apilevel-1"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.html">Cradle</a></li>
-          <li class="api apilevel-2"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleInsertionListener.html">CradleInsertionListener</a></li>
+          <li class="api apilevel-2"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingLed.html">DimmingLed</a></li>
+          <li class="api apilevel-2"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/Led.html">Led</a></li>
       </ul>
     </li>
               
     <li><h2>Classes</h2>
       <ul>
-          <li class="selected api apilevel-1"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleManager.html">CradleManager</a></li>
+          <li class="selected api apilevel-2"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html">DimmingSequence</a></li>
+          <li class="api apilevel-2"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint</a></li>
+          <li class="api apilevel-2"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/SelfshoppingLedManager.html">SelfshoppingLedManager</a></li>
       </ul>
     </li>
               
-    <li><h2>Enums</h2>
-      <ul>
-          <li class="api apilevel-1"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleType.html">CradleType</a></li>
-      </ul>
-    </li>
               
               
             </ul><br/>
@@ -366,11 +363,14 @@ Summary:
 
 
 
+  <a href="#constants">Constants</a>
+  
 
 
 
 
-  <a href="#pubctors">Ctors</a>
+
+  &#124; <a href="#pubctors">Ctors</a>
   
 
 
@@ -387,7 +387,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a>
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a>
   
   
 
@@ -403,7 +403,7 @@ Summary:
      
     
     class
-<h1 itemprop="name">CradleManager</h1>
+<h1 itemprop="name">DimmingSequence</h1>
 
 
 
@@ -422,7 +422,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-1">
+<div id="jd-content" class="api apilevel-2">
 <table class="jd-inheritance-table">
 
 
@@ -436,7 +436,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.extension.selfshopping.cradle.CradleManager</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.extension.selfshopping.led.DimmingSequence</td>
     </tr>
     
 
@@ -452,8 +452,10 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">This class is used to return the current Cradle API, depending on the
- targeted device.
+<p itemprop="articleBody">Class representing a sequence characterized by <code>(time, brightness)</code> pairs.
+ The sequence is executed by a dimming LED that interpolates the brightness
+ between different time values of the sequence. In this way is possible to
+ have a smooth dimming effect.
 </p>
 
 
@@ -494,6 +496,22 @@ Summary:
 
 
 
+<!-- =========== ENUM CONSTANT SUMMARY =========== -->
+<table id="constants" class="jd-sumtable"><tr><th colspan="12">Constants</th></tr>
+
+
+    
+    <tr class="alt-color api apilevel-2" >
+        <td class="jd-typecol">int</td>
+        <td class="jd-linkcol"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html#MAX_SIZE">MAX_SIZE</a></td>
+        <td class="jd-descrcol" width="100%">Maximum number of sequence points supported.</td>
+    </tr>
+    
+    
+
+</table>
+
+
 
 
 
@@ -510,7 +528,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
@@ -520,8 +538,29 @@ Summary:
             </nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleManager.html#CradleManager()">CradleManager</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html#DimmingSequence(com.datalogic.extension.selfshopping.led.DimmingSequencePoint[])">DimmingSequence</a></span>(<a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint[]</a> sequence)</nobr>
         
+        <div class="jd-descrdiv">Constructor of a dimming sequence, taking an array of points as
+ parameter.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-2" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            </nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html#DimmingSequence()">DimmingSequence</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Empty constructor of a dimming sequence.</div>
+  
   </td></tr>
 
 
@@ -539,21 +578,129 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-2" >
         <td class="jd-typecol"><nobr>
             
             
             
-            static
             
-            <a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.html">Cradle</a></nobr>
+            
+            void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleManager.html#getCradle()">getCradle</a></span>()</nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html#add(com.datalogic.extension.selfshopping.led.DimmingSequencePoint)">add</a></span>(<a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint</a> point)</nobr>
         
-        <div class="jd-descrdiv">This method returns an instance of the specific Cradle available
- depending on the current device, or null in case no Cradle is
- currently supported.</div>
+        <div class="jd-descrdiv">Adds a new point in the sequence.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-2" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html#clear()">clear</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Remove all the points of the sequence.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-2" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html#getAt(int)">getAt</a></span>(int time)</nobr>
+        
+        <div class="jd-descrdiv">Retrieves a point given its time value.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-2" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint[]</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html#getSequenceArray()">getSequenceArray</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Return an array of <code>(time, brightness)</code> pairs that represent the
+ sequence.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-2" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html#remove(com.datalogic.extension.selfshopping.led.DimmingSequencePoint)">remove</a></span>(<a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint</a> point)</nobr>
+        
+        <div class="jd-descrdiv">Removes a point in the sequence.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-2" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html#removeAt(int)">removeAt</a></span>(int time)</nobr>
+        
+        <div class="jd-descrdiv">Removes a point in the sequence, given the time parameter of the
+ point to remove.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-2" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html#size()">size</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Return the sequence size.</div>
   
   </td></tr>
 
@@ -797,6 +944,53 @@ From class
 <!-- Constants -->
 
 
+<!-- ========= ENUM CONSTANTS DETAIL ======== -->
+<h2>Constants</h2>
+
+
+
+
+<A NAME="MAX_SIZE"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        int
+      </span>
+        MAX_SIZE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Maximum number of sequence points supported.
+</p></div>
+
+    
+        <div class="jd-tagdata">
+        <span class="jd-tagtitle">Constant Value: </span>
+        <span>
+            
+                50
+                (0x00000032)
+            
+        </span>
+        </div>
+    
+    </div>
+</div>
+
+
+
+
 <!-- Fields -->
 
 
@@ -808,9 +1002,9 @@ From class
 
 
 
-<A NAME="CradleManager()"></A>
+<A NAME="DimmingSequence(com.datalogic.extension.selfshopping.led.DimmingSequencePoint[])"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
@@ -820,19 +1014,76 @@ From class
          
         
       </span>
-      <span class="sympad">CradleManager</span>
-      <span class="normal">()</span>
+      <span class="sympad">DimmingSequence</span>
+      <span class="normal">(<a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint[]</a> sequence)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Constructor of a dimming sequence, taking an array of points as
+ parameter.
+ The points will be deep copied in the sequence, any change to the
+ original set will not take effect in the sequence.
+ Additionally, the input sequence should not be null, contain any
+ point with the same time value or be larger than <code><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html#MAX_SIZE">MAX_SIZE</a></code>.
+ In any of these cases, an <code><a href="../../../../../../reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></code> will be thrown.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>sequence</td>
+          <td>An array of <code><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint</a></code> objects, each
+        representing a <code>(time, brightness)</code> pair in the sequence.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IllegalArgumentException</td>
+            <td>Exception thrown when the input sequence is invalid.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="DimmingSequence()"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">DimmingSequence</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Empty constructor of a dimming sequence.
+</p></div>
 
     </div>
 </div>
@@ -853,37 +1104,282 @@ From class
 
 
 
-<A NAME="getCradle()"></A>
+<A NAME="add(com.datalogic.extension.selfshopping.led.DimmingSequencePoint)"></A>
 
-<div class="jd-details api apilevel-1"> 
+<div class="jd-details api apilevel-2"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
-        static 
          
          
          
-        <a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.html">Cradle</a>
+         
+        void
       </span>
-      <span class="sympad">getCradle</span>
-      <span class="normal">()</span>
+      <span class="sympad">add</span>
+      <span class="normal">(<a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint</a> point)</span>
     </h4>
       <div class="api-level">
         <div>
-  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 1</a></div>
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a></div>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>This method returns an instance of the specific Cradle available
- depending on the current device, or null in case no Cradle is
- currently supported.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Adds a new point in the sequence. The new point will be added only if
+ in the sequence there isn't another point with the same time value
+ and if the sequence does not exceed <code><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequence.html#MAX_SIZE">MAX_SIZE</a></code> after the addition.
+ If one of these cases is true an <code><a href="../../../../../../reference/java/lang/IllegalArgumentException.html">IllegalArgumentException</a></code> will be thrown.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>point</td>
+          <td>The point to add.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Throws</h5>
+      <table class="jd-tagtable">  
+        <tr>
+            <th>IllegalArgumentException</td>
+            <td>If one of the above cases is true.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="clear()"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">clear</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Remove all the points of the sequence.
+</p></div>
+
+    </div>
+</div>
+
+
+<A NAME="getAt(int)"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint</a>
+      </span>
+      <span class="sympad">getAt</span>
+      <span class="normal">(int time)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves a point given its time value.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>time</td>
+          <td>The time value of the point to find.</td>
+        </tr>
+      </table>
+  </div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>A generic <code><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.html">Cradle</a></code> instance that can be cast depending
- on the current Cradle type, or null in case no Cradle is available.
+      <ul class="nolist"><li>The <code><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint</a></code> object if found, or null
+         if not found.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getSequenceArray()"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        <a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint[]</a>
+      </span>
+      <span class="sympad">getSequenceArray</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Return an array of <code>(time, brightness)</code> pairs that represent the
+ sequence. All points will be a copy of the original, thus any update
+ to the resulting array will not take effect on the sequence.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>The array of <code><a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint</a></code> objects.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="remove(com.datalogic.extension.selfshopping.led.DimmingSequencePoint)"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">remove</span>
+      <span class="normal">(<a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/DimmingSequencePoint.html">DimmingSequencePoint</a> point)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Removes a point in the sequence.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>point</td>
+          <td>The point to remove. A check both on time and on brightness
+        values is done.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="removeAt(int)"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">removeAt</span>
+      <span class="normal">(int time)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Removes a point in the sequence, given the time parameter of the
+ point to remove.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>time</td>
+          <td>The time value of the point to remove.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="size()"></A>
+
+<div class="jd-details api apilevel-2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">size</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Return the sequence size.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code>
+         The number of points in the sequence.
 </li></ul>
   </div>
 
