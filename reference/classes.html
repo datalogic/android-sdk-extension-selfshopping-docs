@@ -244,7 +244,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic Selfshopping Extension</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2' ];
+        var SINCE_DATA = [ '1', '2', '3' ];
         buildApiLevelSelector();
       </script>
                   
@@ -269,6 +269,8 @@ Distribution</a></li>
   <a href="../reference/com/datalogic/extension/selfshopping/led/action/persistence/package-summary.html">com.datalogic.extension.selfshopping.led.action.persistence</a></li>
     <li class="api apilevel-2">
   <a href="../reference/com/datalogic/extension/selfshopping/led/event/package-summary.html">com.datalogic.extension.selfshopping.led.event</a></li>
+    <li class="api apilevel-3">
+  <a href="../reference/com/datalogic/extension/selfshopping/power/package-summary.html">com.datalogic.extension.selfshopping.power</a></li>
               </ul><br/>
 
             </div> <!-- end packages-nav -->
@@ -334,8 +336,10 @@ Distribution</a></li>
     <a href="#letter_D">D</a>&nbsp;&nbsp;
     <a href="#letter_G">G</a>&nbsp;&nbsp;
     <a href="#letter_L">L</a>&nbsp;&nbsp;
+    <a href="#letter_M">M</a>&nbsp;&nbsp;
     <a href="#letter_P">P</a>&nbsp;&nbsp;
     <a href="#letter_S">S</a>&nbsp;&nbsp;
+    <a href="#letter_T">T</a>&nbsp;&nbsp;
     <a href="#letter_V">V</a>&nbsp;&nbsp;
 </div>
 
@@ -345,46 +349,67 @@ Distribution</a></li>
 <table class="jd-sumtable">
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-3" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/power/ChargingProfile.html">ChargingProfile</a></td>
+            <td class="jd-descrcol" width="100%">Class representing a generic charging profile that can be used in the
+ <code><a href="../reference/com/datalogic/extension/selfshopping/power/SelfshoppingBatteryManager.html">SelfshoppingBatteryManager</a></code> in order to setup a different charging
+ preference (device dependent).&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/ConfigArea.html">ConfigArea</a></td>
             <td class="jd-descrcol" width="100%">Class representing the Joya Touch configuration area, consisting in an
  array of bytes and its size.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/Cradle.html">Cradle</a></td>
             <td class="jd-descrcol" width="100%">Interface exposing the API of a generic Cradle.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-3" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/Cradle.InsertionState.html">Cradle.InsertionState</a></td>
+            <td class="jd-descrcol" width="100%">Enumerative representing an insertion state depending on the device's
+ position.&nbsp;</td>
         </tr>
     
     
         <tr class="alt-color api apilevel-2" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/CradleInsertionListener.html">CradleInsertionListener</a></td>
             <td class="jd-descrcol" width="100%">This interface is used by the application to listen to the events of insertion
- and extraction of the device from the Cradle..&nbsp;</td>
+ and extraction of the device from the Cradle.&nbsp;</td>
         </tr>
     
     
         <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.html">CradleJoyaTouch</a></td>
-            <td class="jd-descrcol" width="100%">Interface for the Joya Touch Cradle.&nbsp;</td>
+            <td class="jd-descrcol" width="100%">Interface for the Joya Touch Cradle API.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class="alt-color api apilevel-3" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a></td>
+            <td class="jd-descrcol" width="100%">Enumerative representing a Joya Touch Cradle type.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/CradleManager.html">CradleManager</a></td>
             <td class="jd-descrcol" width="100%">This class is used to return the current Cradle API, depending on the
  targeted device.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/CradleType.html">CradleType</a></td>
-            <td class="jd-descrcol" width="100%">This enum lists the currently supported Cradles.&nbsp;</td>
+            <td class="jd-descrcol" width="100%">This enum lists the currently supported Cradle APIs.&nbsp;</td>
         </tr>
     
     
-        <tr class="alt-color api apilevel-1" >
+        <tr class=" api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CustomArea.html">CustomArea</a></td>
             <td class="jd-descrcol" width="100%">Class representing the Joya Touch custom area of data, consisting in an
  array of bytes and its size.&nbsp;</td>
@@ -502,6 +527,19 @@ Distribution</a></li>
 </table>
 
 
+<h2 id="letter_M">M</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-3" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/power/ManufacturerInfo.html">ManufacturerInfo</a></td>
+            <td class="jd-descrcol" width="100%">Class representing generic battery manufacturer info.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
 <h2 id="letter_P">P</h2>
 <table class="jd-sumtable">
     
@@ -520,15 +558,41 @@ Distribution</a></li>
 <table class="jd-sumtable">
     
     
-        <tr class="alt-color api apilevel-2" >
+        <tr class="alt-color api apilevel-3" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/power/SelfshoppingBatteryManager.html">SelfshoppingBatteryManager</a></td>
+            <td class="jd-descrcol" width="100%">The Battery Manager used in the Selfshopping Extension SDK.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-2" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/led/SelfshoppingLedManager.html">SelfshoppingLedManager</a></td>
             <td class="jd-descrcol" width="100%">The LED Manager used in the Selfshopping Extension SDK.&nbsp;</td>
         </tr>
     
     
-        <tr class=" api apilevel-1" >
+        <tr class="alt-color api apilevel-1" >
             <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/StateInfo.html">StateInfo</a></td>
             <td class="jd-descrcol" width="100%">Info about the state of the Joya Touch Cradle.&nbsp;</td>
+        </tr>
+    
+    
+</table>
+
+
+<h2 id="letter_T">T</h2>
+<table class="jd-sumtable">
+    
+    
+        <tr class="alt-color api apilevel-3" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/Trolley.html">Trolley</a></td>
+            <td class="jd-descrcol" width="100%">Interface exposing the API of a Trolley.&nbsp;</td>
+        </tr>
+    
+    
+        <tr class=" api apilevel-3" >
+            <td class="jd-linkcol"><a href="../reference/com/datalogic/extension/selfshopping/cradle/TrolleyInsertionListener.html">TrolleyInsertionListener</a></td>
+            <td class="jd-descrcol" width="100%">This interface is used by the application to listen to the events of insertion
+ and extraction of the device from the Trolley.&nbsp;</td>
         </tr>
     
     

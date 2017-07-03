@@ -5,4 +5,5 @@ com.datalogic.extension.selfshopping.led
 com.datalogic.extension.selfshopping.led.action
 com.datalogic.extension.selfshopping.led.action.persistence
 com.datalogic.extension.selfshopping.led.event
+com.datalogic.extension.selfshopping.power
 

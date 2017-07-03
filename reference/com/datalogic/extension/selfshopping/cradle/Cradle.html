@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic Selfshopping Extension</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2' ];
+        var SINCE_DATA = [ '1', '2', '3' ];
         buildApiLevelSelector();
       </script>
                   
@@ -270,6 +270,8 @@ Distribution</a></li>
   <a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/action/persistence/package-summary.html">com.datalogic.extension.selfshopping.led.action.persistence</a></li>
     <li class="api apilevel-2">
   <a href="../../../../../../reference/com/datalogic/extension/selfshopping/led/event/package-summary.html">com.datalogic.extension.selfshopping.led.event</a></li>
+    <li class="api apilevel-3">
+  <a href="../../../../../../reference/com/datalogic/extension/selfshopping/power/package-summary.html">com.datalogic.extension.selfshopping.power</a></li>
               </ul><br/>
 
             </div> <!-- end packages-nav -->
@@ -284,6 +286,8 @@ Distribution</a></li>
       <ul>
           <li class="selected api apilevel-1"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.html">Cradle</a></li>
           <li class="api apilevel-2"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleInsertionListener.html">CradleInsertionListener</a></li>
+          <li class="api apilevel-3"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Trolley.html">Trolley</a></li>
+          <li class="api apilevel-3"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/TrolleyInsertionListener.html">TrolleyInsertionListener</a></li>
       </ul>
     </li>
               
@@ -295,6 +299,7 @@ Distribution</a></li>
               
     <li><h2>Enums</h2>
       <ul>
+          <li class="api apilevel-3"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.InsertionState.html">Cradle.InsertionState</a></li>
           <li class="api apilevel-1"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleType.html">CradleType</a></li>
       </ul>
     </li>
@@ -355,6 +360,8 @@ Distribution</a></li>
 
 Summary:
 
+  <a href="#nestedclasses">Nested Classes</a>
+  
 
 
 
@@ -365,7 +372,8 @@ Summary:
 
 
 
-  <a href="#pubmethods">Methods</a>
+
+  &#124; <a href="#pubmethods">Methods</a>
   
 
 
@@ -445,7 +453,7 @@ Summary:
   <table class="jd-sumtable-expando">
         <tr class="alt-color api apilevel-1" >
               <td class="jd-linkcol"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.html">CradleJoyaTouch</a></td>
-              <td class="jd-descrcol" width="100%">Interface for the Joya Touch Cradle.&nbsp;</td>
+              <td class="jd-descrcol" width="100%">Interface for the Joya Touch Cradle API.&nbsp;</td>
           </tr>
   </table>
       </div>
@@ -485,6 +493,27 @@ Summary:
 
 
 <h2>Summary</h2>
+
+
+
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<table id="nestedclasses" class="jd-sumtable"><tr><th colspan="12">Nested Classes</th></tr>
+
+
+  
+    <tr class="alt-color api apilevel-3" >
+      <td class="jd-typecol"><nobr>
+        
+         
+         
+        
+        enum</nobr></td>
+      <td class="jd-linkcol"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.InsertionState.html">Cradle.InsertionState</a></td>
+      <td class="jd-descrcol" width="100%">Enumerative representing an insertion state depending on the device's
+ position.&nbsp;</td>
+    </tr>
+    
+    
 
 
 
@@ -537,7 +566,25 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class=" api apilevel-3" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.InsertionState.html">Cradle.InsertionState</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.html#getInsertionState()">getInsertionState</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the current device insertion state.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -549,13 +596,13 @@ Summary:
         <td class="jd-linkcol" width="100%"><nobr>
         <span class="sympad"><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.html#getType()">getType</a></span>()</nobr>
         
-        <div class="jd-descrdiv">Returns the specific type of this Cradle.</div>
+        <div class="jd-descrdiv">Returns the platform dependent Cradle API type.</div>
   
   </td></tr>
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -573,7 +620,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-2" >
+    <tr class="alt-color api apilevel-2" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -683,6 +730,42 @@ Summary:
 </div>
 
 
+<A NAME="getInsertionState()"></A>
+
+<div class="jd-details api apilevel-3"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/Cradle.InsertionState.html">Cradle.InsertionState</a>
+      </span>
+      <span class="sympad">getInsertionState</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 3</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the current device insertion state.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>An {@ link InsertionState} representing the current device
+ insertion state.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="getType()"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -707,10 +790,12 @@ Summary:
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Returns the specific type of this Cradle.</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the platform dependent Cradle API type. This method does not
+ refer to the type of Cradle the device is inserted into but only
+ to the different API that can be called from the current device.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>A <code><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleType.html">CradleType</a></code> specifying the current Cradle type.
+      <ul class="nolist"><li>A <code><a href="../../../../../../reference/com/datalogic/extension/selfshopping/cradle/CradleType.html">CradleType</a></code> specifying the current Cradle API type.
 </li></ul>
   </div>
 

@@ -75,7 +75,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <link rel="shortcut icon" type="image/x-icon" href="../../../../../../../favicon.ico" />
-<title>LedActionTurnOff - Datalogic Selfshopping Extension version 1 | Android Add-on</title>
+<title>CradleJoyaTouch.Type - Datalogic Selfshopping Extension version 1 | Android Add-on</title>
 
 <!-- BASIC STYLESHEETS -->
 <link rel="stylesheet"
@@ -115,7 +115,7 @@ type="text/css">
 </head>
 <body class="gc-documentation 
   develop" itemscope itemtype="http://schema.org/Article">
-  <div id="doc-api-level" class="2" style="display:none"></div>
+  <div id="doc-api-level" class="3" style="display:none"></div>
   <a name="top"></a>
 
     <!-- Header -->
@@ -260,11 +260,11 @@ Distribution</a></li>
   <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/package-summary.html">com.datalogic.extension.selfshopping</a></li>
     <li class="api apilevel-1">
   <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/package-summary.html">com.datalogic.extension.selfshopping.cradle</a></li>
-    <li class="api apilevel-1">
+    <li class="selected api apilevel-1">
   <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/package-summary.html">com.datalogic.extension.selfshopping.cradle.joyatouch</a></li>
     <li class="api apilevel-2">
   <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/package-summary.html">com.datalogic.extension.selfshopping.led</a></li>
-    <li class="selected api apilevel-2">
+    <li class="api apilevel-2">
   <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/package-summary.html">com.datalogic.extension.selfshopping.led.action</a></li>
     <li class="api apilevel-2">
   <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/persistence/package-summary.html">com.datalogic.extension.selfshopping.led.action.persistence</a></li>
@@ -282,18 +282,28 @@ Distribution</a></li>
 
             <ul>
               
-              
-    <li><h2>Classes</h2>
+    <li><h2>Interfaces</h2>
       <ul>
-          <li class="api apilevel-2"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedAction.html">LedAction</a></li>
-          <li class="api apilevel-2"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionBlink.html">LedActionBlink</a></li>
-          <li class="api apilevel-2"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionDim.html">LedActionDim</a></li>
-          <li class="api apilevel-2"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionSetBrightness.html">LedActionSetBrightness</a></li>
-          <li class="selected api apilevel-2"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionTurnOff.html">LedActionTurnOff</a></li>
-          <li class="api apilevel-2"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionTurnOn.html">LedActionTurnOn</a></li>
+          <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.html">CradleJoyaTouch</a></li>
       </ul>
     </li>
               
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/ConfigArea.html">ConfigArea</a></li>
+          <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CustomArea.html">CustomArea</a></li>
+          <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/GenericArea.html">GenericArea</a></li>
+          <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/StateInfo.html">StateInfo</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="selected api apilevel-3"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a></li>
+          <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/LedAction.html">LedAction</a></li>
+          <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/LockAction.html">LockAction</a></li>
+      </ul>
+    </li>
               
               
             </ul><br/>
@@ -360,6 +370,18 @@ Distribution</a></li>
   
   
 
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
 
 <div class="sum-details-links">
 
@@ -368,18 +390,18 @@ Summary:
 
 
 
-
-  <a href="#constants">Constants</a>
+  <a href="#enumconstants">Enums</a>
   
 
 
 
 
 
-  &#124; <a href="#pubctors">Ctors</a>
+
+
+
+  &#124; <a href="#pubmethods">Methods</a>
   
-
-
 
 
 
@@ -390,7 +412,7 @@ Summary:
 </div><!-- end sum-details-links -->
 <div class="api-level">
   
-  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 3</a>
   
   
 
@@ -402,11 +424,11 @@ Summary:
 
 <div id="jd-header">
     public
-     
-     
+    static 
+    final 
     
-    class
-<h1 itemprop="name">LedActionTurnOff</h1>
+    enum
+<h1 itemprop="name">CradleJoyaTouch.Type</h1>
 
 
 
@@ -415,7 +437,7 @@ Summary:
   
 
   
-    extends <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedAction.html">LedAction</a><br/>
+    extends Enum&lt;E&nbsp;extends&nbsp;Enum&lt;E&gt;&gt;<br/>
   
   
   
@@ -429,7 +451,7 @@ Summary:
 
 <div id="naMessage"></div>
 
-<div id="jd-content" class="api apilevel-2">
+<div id="jd-content" class="api apilevel-3">
 <table class="jd-inheritance-table">
 
 
@@ -443,7 +465,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="2" class="jd-inheritance-class-cell"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedAction.html">com.datalogic.extension.selfshopping.led.action.LedAction</a></td>
+        <td colspan="2" class="jd-inheritance-class-cell">java.lang.Enum&lt;E&nbsp;extends&nbsp;java.lang.Enum&lt;E&gt;&gt;</td>
     </tr>
     
 
@@ -453,7 +475,7 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.extension.selfshopping.led.action.LedActionTurnOff</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.datalogic.extension.selfshopping.cradle.joyatouch.CradleJoyaTouch.Type</td>
     </tr>
     
 
@@ -469,7 +491,7 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p itemprop="articleBody">LED action for turning OFF a LED.
+<p itemprop="articleBody">Enumerative representing a Joya Touch Cradle type.
 </p>
 
 
@@ -508,22 +530,39 @@ Summary:
 
 
 
-
-
 <!-- =========== ENUM CONSTANT SUMMARY =========== -->
-<table id="constants" class="jd-sumtable"><tr><th colspan="12">Constants</th></tr>
-
+<table id="enumconstants" class="jd-sumtable"><tr><th colspan="12">Enum Values</th></tr>
 
     
-    <tr class="alt-color api apilevel-2" >
-        <td class="jd-typecol">String</td>
-        <td class="jd-linkcol"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionTurnOff.html#TYPE">TYPE</a></td>
-        <td class="jd-descrcol" width="100%">Turn OFF action type.</td>
+    <tr class="alt-color api apilevel-3" >
+        <td class="jd-descrcol"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a>&nbsp;</td>
+        <td class="jd-linkcol">MULTIPLE&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Multiple Cradle.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-3" >
+        <td class="jd-descrcol"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a>&nbsp;</td>
+        <td class="jd-linkcol">SIMPLIFIED_SINGLE&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Simplified Single Cradle.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-3" >
+        <td class="jd-descrcol"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a>&nbsp;</td>
+        <td class="jd-linkcol">SINGLE&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Single Cradle.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-3" >
+        <td class="jd-descrcol"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a>&nbsp;</td>
+        <td class="jd-linkcol">UNKNOWN&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Unknown Cradle.&nbsp;</td>
     </tr>
     
     
 
-</table>
 
 
 
@@ -536,35 +575,50 @@ Summary:
 
 
 
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
 
 
 
 	 
-    <tr class="alt-color api apilevel-2" >
+    <tr class="alt-color api apilevel-3" >
         <td class="jd-typecol"><nobr>
             
             
             
+            static
             
-            
-            </nobr>
+            <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a></nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedActionTurnOff.html#LedActionTurnOff(int)">LedActionTurnOff</a></span>(int id)</nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html#valueOf(java.lang.String)">valueOf</a></span>(String name)</nobr>
         
-        <div class="jd-descrdiv">Default constructor for the turn OFF action.</div>
-  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-3" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            static
+            
+            <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">Type[]</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html#values()">values</a></span>()</nobr>
+        
   </td></tr>
 
 
 
 </table>
-
-
-
-
 
 
 
@@ -580,25 +634,41 @@ Summary:
 
 <tr class="api apilevel-" >
 <td colspan="12">
-  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-com.datalogic.extension.selfshopping.led.action.LedAction" class="jd-expando-trigger closed"
-          ><img id="inherited-methods-com.datalogic.extension.selfshopping.led.action.LedAction-trigger"
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Enum" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Enum-trigger"
           src="../../../../../../../assets/images/triangle-closed.png"
           class="jd-expando-trigger-img" /></a>
 From class
 
-  <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedAction.html">com.datalogic.extension.selfshopping.led.action.LedAction</a>
+  java.lang.Enum
 
-<div id="inherited-methods-com.datalogic.extension.selfshopping.led.action.LedAction">
-  <div id="inherited-methods-com.datalogic.extension.selfshopping.led.action.LedAction-list"
+<div id="inherited-methods-java.lang.Enum">
+  <div id="inherited-methods-java.lang.Enum-list"
         class="jd-inheritedlinks">
   </div>
-  <div id="inherited-methods-com.datalogic.extension.selfshopping.led.action.LedAction-summary" style="display: none;">
+  <div id="inherited-methods-java.lang.Enum-summary" style="display: none;">
     <table class="jd-sumtable-expando">
     
 
 
 	 
-    <tr class="alt-color api apilevel-2" >
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            Object</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">clone</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -608,15 +678,125 @@ From class
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedAction.html#getId()">getId</a></span>()</nobr>
+        <span class="sympad">compareTo</span>(Object arg0)</nobr>
         
-        <div class="jd-descrdiv">Returns the LED ID associated with this action.</div>
-  
   </td></tr>
 
 
 	 
-    <tr class=" api apilevel-2" >
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">compareTo</span>(E arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">equals</span>(Object arg0)</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">finalize</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            Class&lt;E&gt;</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">getDeclaringClass</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">hashCode</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            String</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">name</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            final
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">ordinal</span>()</nobr>
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
         <td class="jd-typecol"><nobr>
             
             
@@ -626,10 +806,24 @@ From class
             String</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/led/action/LedAction.html#getType()">getType</a></span>()</nobr>
+        <span class="sympad">toString</span>()</nobr>
         
-        <div class="jd-descrdiv">Returns the action type.</div>
-  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            &lt;T&nbsp;extends&nbsp;Enum&lt;T&gt;&gt;
+            T</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">valueOf</span>(Class&lt;T&gt; arg0, String arg1)</nobr>
+        
   </td></tr>
 
 
@@ -841,6 +1035,50 @@ From class
 </td></tr>
 
 
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Comparable" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Comparable-trigger"
+          src="../../../../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  java.lang.Comparable
+
+<div id="inherited-methods-java.lang.Comparable">
+  <div id="inherited-methods-java.lang.Comparable-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Comparable-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad">compareTo</span>(T arg0)</nobr>
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
 </table>
 
 
@@ -861,106 +1099,140 @@ From class
 <!-- Enum Values -->
 
 
-<!-- Constants -->
-
-
 <!-- ========= ENUM CONSTANTS DETAIL ======== -->
-<h2>Constants</h2>
+<h2>Enum Values</h2>
 
 
 
 
-<A NAME="TYPE"></A>
+<A NAME="MULTIPLE"></A>
 
-<div class="jd-details api apilevel-2"> 
+<div class="jd-details api apilevel-3"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
         static 
         final 
-        String
+        <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a>
       </span>
-        TYPE
+        MULTIPLE
     </h4>
       <div class="api-level">
         
-  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 3</a>
         
   
 
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Turn OFF action type.
+  <div class="jd-tagdata jd-tagdescr"><p>Multiple Cradle.
 </p></div>
 
-    
-        <div class="jd-tagdata">
-        <span class="jd-tagtitle">Constant Value: </span>
-        <span>
-            
-                "turnOff"
-            
-        </span>
-        </div>
     
     </div>
 </div>
 
 
+
+<A NAME="SIMPLIFIED_SINGLE"></A>
+
+<div class="jd-details api apilevel-3"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a>
+      </span>
+        SIMPLIFIED_SINGLE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 3</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Simplified Single Cradle.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="SINGLE"></A>
+
+<div class="jd-details api apilevel-3"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a>
+      </span>
+        SINGLE
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 3</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Single Cradle.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<A NAME="UNKNOWN"></A>
+
+<div class="jd-details api apilevel-3"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a>
+      </span>
+        UNKNOWN
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 3</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Unknown Cradle.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+
+<!-- Constants -->
 
 
 <!-- Fields -->
 
 
 <!-- Public ctors -->
-
-
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<h2>Public Constructors</h2>
-
-
-
-<A NAME="LedActionTurnOff(int)"></A>
-
-<div class="jd-details api apilevel-2"> 
-    <h4 class="jd-details-title">
-      <span class="normal">
-        public 
-         
-         
-         
-         
-        
-      </span>
-      <span class="sympad">LedActionTurnOff</span>
-      <span class="normal">(int id)</span>
-    </h4>
-      <div class="api-level">
-        <div>
-  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 2</a></div>
-        
-  
-
-      </div>
-    <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Default constructor for the turn OFF action.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>id</td>
-          <td>The LED ID.
-</td>
-        </tr>
-      </table>
-  </div>
-
-    </div>
-</div>
-
-
 
 
 
@@ -971,6 +1243,71 @@ From class
 
 <!-- ========= METHOD DETAIL ======== -->
 <!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<A NAME="valueOf(java.lang.String)"></A>
+
+<div class="jd-details api apilevel-3"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a>
+      </span>
+      <span class="sympad">valueOf</span>
+      <span class="normal">(String name)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 3</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+<A NAME="values()"></A>
+
+<div class="jd-details api apilevel-3"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+         
+         
+        <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">Type[]</a>
+      </span>
+      <span class="sympad">values</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 3</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
 
 
 
