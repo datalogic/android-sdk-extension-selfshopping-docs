@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic Selfshopping Extension</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5' ];
         buildApiLevelSelector();
       </script>
                   
@@ -300,6 +300,7 @@ Distribution</a></li>
     <li><h2>Enums</h2>
       <ul>
           <li class="api apilevel-3"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a></li>
+          <li class="api apilevel-5"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FailureState.html">FailureState</a></li>
           <li class="api apilevel-4"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FavoriteFirmware.html">FavoriteFirmware</a></li>
           <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/LedAction.html">LedAction</a></li>
           <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/LockAction.html">LockAction</a></li>
@@ -608,7 +609,25 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class="alt-color api apilevel-5" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/ConfigArea.html#getRelockTimeout()">getRelockTimeout</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the relock timeout stored in the cradle's configuration area.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -627,7 +646,45 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-5" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/ConfigArea.html#isNotificationLedSmoothingEnabled()">isNotificationLedSmoothingEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the configuration area's flag which states whether the 
+ notification LED's smoothing is enabled or not.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-5" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/ConfigArea.html#isStandbyLedEnabled()">isStandbyLedEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the configuration area's flag which states whether the 
+ standby LED is enabled or not.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -641,6 +698,62 @@ Summary:
         
         <div class="jd-descrdiv">Sets the value controlling the fast charge in the configuration area
  of the Joya Touch Cradle.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-5" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/ConfigArea.html#setNotificationLedSmoothingEnabled(boolean)">setNotificationLedSmoothingEnabled</a></span>(boolean enable)</nobr>
+        
+        <div class="jd-descrdiv">Sets the configuration area's flag which states whether the 
+ notification LED's smoothing is enabled or not.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-5" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/ConfigArea.html#setRelockTimeout(int)">setRelockTimeout</a></span>(int new_timeout)</nobr>
+        
+        <div class="jd-descrdiv">Sets the relock timeout in the cradle's configuration area.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-5" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/ConfigArea.html#setStandbyLedEnabled(boolean)">setStandbyLedEnabled</a></span>(boolean enable)</nobr>
+        
+        <div class="jd-descrdiv">Sets the configuration area's flag which states whether the 
+ standby LED is enabled or not.</div>
   
   </td></tr>
 
@@ -1121,6 +1234,43 @@ From class
 
 
 
+<A NAME="getRelockTimeout()"></A>
+
+<div class="jd-details api apilevel-5"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getRelockTimeout</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the relock timeout stored in the cradle's configuration area.
+ The value stored on the cradle is the timeout divided by 5. As a 
+ consequence the returned value is multiplied by 5.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> the relock timeout in seconds.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="isFastChargeEnabled()"></A>
 
 <div class="jd-details api apilevel-1"> 
@@ -1150,6 +1300,80 @@ From class
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li><code>boolean</code> true if the fast charge is enabled,
+ false otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isNotificationLedSmoothingEnabled()"></A>
+
+<div class="jd-details api apilevel-5"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isNotificationLedSmoothingEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the configuration area's flag which states whether the 
+ notification LED's smoothing is enabled or not.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code> true if the smoothing is enabled,
+ false otherwise.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isStandbyLedEnabled()"></A>
+
+<div class="jd-details api apilevel-5"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isStandbyLedEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the configuration area's flag which states whether the 
+ standby LED is enabled or not.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code> true if the smoothing is enabled,
  false otherwise.
 </li></ul>
   </div>
@@ -1190,6 +1414,130 @@ From class
         <tr>
           <th>enable</td>
           <td>True for fast charge enable, false for fast charge disable.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setNotificationLedSmoothingEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-5"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setNotificationLedSmoothingEnabled</span>
+      <span class="normal">(boolean enable)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the configuration area's flag which states whether the 
+ notification LED's smoothing is enabled or not.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enable</td>
+          <td>True to enable smoothing, false for disabling it.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setRelockTimeout(int)"></A>
+
+<div class="jd-details api apilevel-5"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setRelockTimeout</span>
+      <span class="normal">(int new_timeout)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the relock timeout in the cradle's configuration area. Allowed
+ values are in the range [5 - 420] seconds.
+ The stored value is divided by 5 before saving it (see above).</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>new_timeout</td>
+          <td>An integer value between 5 seconds and 420 seconds (7 minutes).
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setStandbyLedEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-5"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setStandbyLedEnabled</span>
+      <span class="normal">(boolean enable)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the configuration area's flag which states whether the 
+ standby LED is enabled or not.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enable</td>
+          <td>True to enable smoothing, false for disabling it.
 </td>
         </tr>
       </table>

@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic Selfshopping Extension</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5' ];
         buildApiLevelSelector();
       </script>
                   
@@ -300,6 +300,7 @@ Distribution</a></li>
     <li><h2>Enums</h2>
       <ul>
           <li class="api apilevel-3"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a></li>
+          <li class="api apilevel-5"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FailureState.html">FailureState</a></li>
           <li class="api apilevel-4"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FavoriteFirmware.html">FavoriteFirmware</a></li>
           <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/LedAction.html">LedAction</a></li>
           <li class="api apilevel-1"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/LockAction.html">LockAction</a></li>
@@ -605,7 +606,25 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-4" >
+    <tr class="alt-color api apilevel-5" >
+        <td class="jd-typecol"><nobr>
+            abstract
+            
+            
+            
+            
+            <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FailureState.html">FailureState</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.html#getFailureState()">getFailureState</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Return current slot's failure state.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-4" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -623,7 +642,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -641,7 +660,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -659,7 +678,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -677,7 +696,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -695,7 +714,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-4" >
+    <tr class="alt-color api apilevel-4" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -713,7 +732,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -731,7 +750,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             abstract
             
@@ -1091,6 +1110,42 @@ From interface
       <h5 class="jd-tagtitle">Returns</h5>
       <ul class="nolist"><li>A <code><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/CradleJoyaTouch.Type.html">CradleJoyaTouch.Type</a></code> enum representing the type of Cradle in which
          the device is inserted.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="getFailureState()"></A>
+
+<div class="jd-details api apilevel-5"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FailureState.html">FailureState</a>
+      </span>
+      <span class="sympad">getFailureState</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 5</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Return current slot's failure state.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>A <code><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FailureState.html">FailureState</a></code> enum representing the current
+          failure state.
 </li></ul>
   </div>
 
