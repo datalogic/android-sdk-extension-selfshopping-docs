@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic Selfshopping Extension</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6' ];
         buildApiLevelSelector();
       </script>
                   
@@ -609,7 +609,25 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-5" >
+    <tr class="alt-color api apilevel-6" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/ConfigArea.html#getFailureNotificationMask()">getFailureNotificationMask</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Get the failure notification bitmask from the cradle.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-5" >
         <td class="jd-typecol"><nobr>
             
             
@@ -627,7 +645,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-1" >
+    <tr class="alt-color api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -646,7 +664,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-5" >
+    <tr class=" api apilevel-5" >
         <td class="jd-typecol"><nobr>
             
             
@@ -665,7 +683,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-5" >
+    <tr class="alt-color api apilevel-5" >
         <td class="jd-typecol"><nobr>
             
             
@@ -684,7 +702,45 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-1" >
+    <tr class=" api apilevel-6" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            boolean</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/ConfigArea.html#isStopWlcWhenLeverOpenEnabled()">isStopWlcWhenLeverOpenEnabled</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Returns the configuration area's flag which states whether the 
+ WLC is blocked all the times the lever is open or only when 
+ an unlock command is received.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-6" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/ConfigArea.html#setFailureNotificationMask(int)">setFailureNotificationMask</a></span>(int mask)</nobr>
+        
+        <div class="jd-descrdiv">Set the failure notification mask.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-1" >
         <td class="jd-typecol"><nobr>
             
             
@@ -703,7 +759,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-5" >
+    <tr class="alt-color api apilevel-5" >
         <td class="jd-typecol"><nobr>
             
             
@@ -722,7 +778,7 @@ Summary:
 
 
 	 
-    <tr class="alt-color api apilevel-5" >
+    <tr class=" api apilevel-5" >
         <td class="jd-typecol"><nobr>
             
             
@@ -740,7 +796,7 @@ Summary:
 
 
 	 
-    <tr class=" api apilevel-5" >
+    <tr class="alt-color api apilevel-5" >
         <td class="jd-typecol"><nobr>
             
             
@@ -754,6 +810,24 @@ Summary:
         
         <div class="jd-descrdiv">Sets the configuration area's flag which states whether the 
  standby LED is enabled or not.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-6" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            void</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/ConfigArea.html#setStopWlcWhenLeverOpenEnabled(boolean)">setStopWlcWhenLeverOpenEnabled</a></span>(boolean enable)</nobr>
+        
+        <div class="jd-descrdiv">Sets the corresponding configuration area's flag.</div>
   
   </td></tr>
 
@@ -1011,7 +1085,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>()</nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
         
   </td></tr>
 
@@ -1027,7 +1101,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
         
   </td></tr>
 
@@ -1043,7 +1117,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0)</nobr>
+        <span class="sympad">wait</span>()</nobr>
         
   </td></tr>
 
@@ -1234,6 +1308,43 @@ From class
 
 
 
+<A NAME="getFailureNotificationMask()"></A>
+
+<div class="jd-details api apilevel-6"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">getFailureNotificationMask</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 6</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Get the failure notification bitmask from the cradle. Failures
+ on the cradle will be notified only when the corresponding
+ bit is set on the mask.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>int</code> the current failure notification mask
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
 <A NAME="getRelockTimeout()"></A>
 
 <div class="jd-details api apilevel-5"> 
@@ -1376,6 +1487,89 @@ From class
       <ul class="nolist"><li><code>boolean</code> true if the smoothing is enabled,
  false otherwise.
 </li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="isStopWlcWhenLeverOpenEnabled()"></A>
+
+<div class="jd-details api apilevel-6"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        boolean
+      </span>
+      <span class="sympad">isStopWlcWhenLeverOpenEnabled</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 6</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Returns the configuration area's flag which states whether the 
+ WLC is blocked all the times the lever is open or only when 
+ an unlock command is received.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li><code>boolean</code> true means that the WLC is blocked
+ all the times that the lever is open, no matter if this is done
+ with an unlock command or with the unlocking key. 
+ When disabled (false) it means that the WLC is blocked only when
+ the unlock command is received, whereas the unlocking key has
+ no effect.
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setFailureNotificationMask(int)"></A>
+
+<div class="jd-details api apilevel-6"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setFailureNotificationMask</span>
+      <span class="normal">(int mask)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 6</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Set the failure notification mask.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>mask</td>
+          <td>The failure bitmask that will be used from the cradle
+ for notifying failures.
+</td>
+        </tr>
+      </table>
   </div>
 
     </div>
@@ -1538,6 +1732,47 @@ From class
         <tr>
           <th>enable</td>
           <td>True to enable smoothing, false for disabling it.
+</td>
+        </tr>
+      </table>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="setStopWlcWhenLeverOpenEnabled(boolean)"></A>
+
+<div class="jd-details api apilevel-6"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        void
+      </span>
+      <span class="sympad">setStopWlcWhenLeverOpenEnabled</span>
+      <span class="normal">(boolean enable)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 6</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Sets the corresponding configuration area's flag.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>enable</td>
+          <td>True to bind the WLC status to the lever's one; false 
+ for binding the WLC status to the unlock command.
 </td>
         </tr>
       </table>
