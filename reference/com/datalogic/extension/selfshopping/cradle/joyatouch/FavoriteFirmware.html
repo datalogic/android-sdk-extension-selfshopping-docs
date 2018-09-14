@@ -245,7 +245,7 @@ Distribution</a></li>
         <div id="api-nav-title">Datalogic Selfshopping Extension</div>
         </div><!-- end nav header -->
       <script>
-        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6' ];
+        var SINCE_DATA = [ '1', '2', '3', '4', '5', '6', '7' ];
         buildApiLevelSelector();
       </script>
                   
@@ -536,15 +536,25 @@ Summary:
 <table id="enumconstants" class="jd-sumtable"><tr><th colspan="12">Enum Values</th></tr>
 
     
-    <tr class="alt-color api apilevel-4" >
+    <tr class="alt-color api apilevel-7" >
         <td class="jd-descrcol"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FavoriteFirmware.html">FavoriteFirmware</a>&nbsp;</td>
-        <td class="jd-linkcol">KEHTO&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Favor the Kehto firmware
+        <td class="jd-linkcol">FORCE_LEGACY&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Force the communication in legacy mode (even with new cradles)
 &nbsp;</td>
     </tr>
     
     
     <tr class=" api apilevel-4" >
+        <td class="jd-descrcol"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FavoriteFirmware.html">FavoriteFirmware</a>&nbsp;</td>
+        <td class="jd-linkcol">KEHTO&nbsp;</td>
+        <td class="jd-descrcol" width="100%"><em>
+      This field is deprecated.
+    Use either LATEST_DETECTED or FORCE_LEGACY
+</em>&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-4" >
         <td class="jd-descrcol"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FavoriteFirmware.html">FavoriteFirmware</a>&nbsp;</td>
         <td class="jd-linkcol">LATEST_DETECTED&nbsp;</td>
         <td class="jd-descrcol" width="100%">Favor the latest detected firmware, taken from the last Cradle the
@@ -553,11 +563,13 @@ Summary:
     </tr>
     
     
-    <tr class="alt-color api apilevel-4" >
+    <tr class=" api apilevel-4" >
         <td class="jd-descrcol"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FavoriteFirmware.html">FavoriteFirmware</a>&nbsp;</td>
         <td class="jd-linkcol">LEGACY&nbsp;</td>
-        <td class="jd-descrcol" width="100%">Favor the legacy Cradle firmware
-&nbsp;</td>
+        <td class="jd-descrcol" width="100%"><em>
+      This field is deprecated.
+    Use either LATEST_DETECTED or FORCE_LEGACY
+</em>&nbsp;</td>
     </tr>
     
     
@@ -582,6 +594,42 @@ Summary:
 <!-- ========== METHOD SUMMARY =========== -->
 <table id="pubmethods" class="jd-sumtable"><tr><th colspan="12">Public Methods</th></tr>
 
+
+
+	 
+    <tr class="alt-color api apilevel-7" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            static
+            
+            <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FavoriteFirmware.html">FavoriteFirmware</a></nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FavoriteFirmware.html#fromInt(int)">fromInt</a></span>(int n)</nobr>
+        
+        <div class="jd-descrdiv">Retrieves the corresponding ConcurrencyPreference value, from a valid integer.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-7" >
+        <td class="jd-typecol"><nobr>
+            
+            
+            
+            
+            
+            int</nobr>
+        </td>
+        <td class="jd-linkcol" width="100%"><nobr>
+        <span class="sympad"><a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FavoriteFirmware.html#toInt()">toInt</a></span>()</nobr>
+        
+        <div class="jd-descrdiv">Converts the ConcurrencyPreference enum to its integer representing value.</div>
+  
+  </td></tr>
 
 
 	 
@@ -671,13 +719,13 @@ From class
         <td class="jd-typecol"><nobr>
             
             
-            final
+            
             
             
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">compareTo</span>(E arg0)</nobr>
+        <span class="sympad">compareTo</span>(Object arg0)</nobr>
         
   </td></tr>
 
@@ -687,13 +735,13 @@ From class
         <td class="jd-typecol"><nobr>
             
             
-            
+            final
             
             
             int</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">compareTo</span>(Object arg0)</nobr>
+        <span class="sympad">compareTo</span>(E arg0)</nobr>
         
   </td></tr>
 
@@ -991,7 +1039,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
+        <span class="sympad">wait</span>()</nobr>
         
   </td></tr>
 
@@ -1007,7 +1055,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>(long arg0)</nobr>
+        <span class="sympad">wait</span>(long arg0, int arg1)</nobr>
         
   </td></tr>
 
@@ -1023,7 +1071,7 @@ From class
             void</nobr>
         </td>
         <td class="jd-linkcol" width="100%"><nobr>
-        <span class="sympad">wait</span>()</nobr>
+        <span class="sympad">wait</span>(long arg0)</nobr>
         
   </td></tr>
 
@@ -1104,6 +1152,36 @@ From interface
 
 
 
+<A NAME="FORCE_LEGACY"></A>
+
+<div class="jd-details api apilevel-7"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FavoriteFirmware.html">FavoriteFirmware</a>
+      </span>
+        FORCE_LEGACY
+    </h4>
+      <div class="api-level">
+        
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 7</a>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Force the communication in legacy mode (even with new cradles)
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
 <A NAME="KEHTO"></A>
 
 <div class="jd-details api apilevel-4"> 
@@ -1124,9 +1202,13 @@ From interface
 
       </div>
     <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Favor the Kehto firmware
-</p></div>
+      <p>
+  <p class="caution"><strong>
+      This field is deprecated.</strong><br/>
+    Use either LATEST_DETECTED or FORCE_LEGACY
+
+  </p>
+  <div class="jd-tagdata jd-tagdescr"><p>Favor the Kehto firmware</p></div>
 
     
     </div>
@@ -1185,9 +1267,13 @@ From interface
 
       </div>
     <div class="jd-details-descr">
-      
-  <div class="jd-tagdata jd-tagdescr"><p>Favor the legacy Cradle firmware
-</p></div>
+      <p>
+  <p class="caution"><strong>
+      This field is deprecated.</strong><br/>
+    Use either LATEST_DETECTED or FORCE_LEGACY
+
+  </p>
+  <div class="jd-tagdata jd-tagdescr"><p>Favor the legacy Cradle firmware</p></div>
 
     
     </div>
@@ -1216,6 +1302,85 @@ From interface
 
 <h2>Public Methods</h2>
 
+
+
+<A NAME="fromInt(int)"></A>
+
+<div class="jd-details api apilevel-7"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+         
+         
+        <a href="../../../../../../../reference/com/datalogic/extension/selfshopping/cradle/joyatouch/FavoriteFirmware.html">FavoriteFirmware</a>
+      </span>
+      <span class="sympad">fromInt</span>
+      <span class="normal">(int n)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 7</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Retrieves the corresponding ConcurrencyPreference value, from a valid integer.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>n</td>
+          <td><code>int</code></td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>ConcurrencyPreference the corresponding one.
+ </li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<A NAME="toInt()"></A>
+
+<div class="jd-details api apilevel-7"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        int
+      </span>
+      <span class="sympad">toInt</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+  Added in <a href="../../../../../../../guide/topics/manifest/uses-sdk-element.html#ApiLevels">revision 7</a></div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Converts the ConcurrencyPreference enum to its integer representing value.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>int
+</li></ul>
+  </div>
+
+    </div>
+</div>
 
 
 <A NAME="valueOf(java.lang.String)"></A>
